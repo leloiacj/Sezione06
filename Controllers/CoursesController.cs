@@ -8,19 +8,19 @@ using Microsoft.Extensions.Logging;
 
 namespace MyCourse.Controllers
 {
-    [Route("[controller]")]
     public class CoursesController : Controller
     {
 
 
         public IActionResult Index()
         {
-            return Content("index");
+            // return Content("index");
+            return View();
         }
 
         public IActionResult Detail(int id)
         {
-            return Content($"sono detail e ho id {id}");
+            return View();
         }
 
 
